@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Calculator</title>
+    <center>
+        <header>
+            <u>
+                <h1>Calculator</h1>
+            </u>
+        </header>
+    </center>
+    <script>
+        function Addition(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = n1+n2;
+            var res1 = document.getElementById("result");
+            res1.value= res;
+        }
+        function Subtraction(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = n1-n2;
+            var res1 = document.getElementById("result");
+            res1.value= res;
+        }
+        function Multiplication(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = n1*n2;
+            var res1 = document.getElementById("result");
+            res1.value= res;
+        }
+        function Division(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = n1/n2;
+            var res1 = document.getElementById("result");
+            res1.value= res;
+        }
+    </script>
+</head>
+<body>
+    <form method="get">
+       <center>
+            <table>
+                <tr>
+                    <td>
+                        Enter Number1
+                    </td>
+                    
+                    <td>
+                        <input type="text" required="required" name="1stNumber" id="num1" placeholder="Enter the number">
+                    </td>
+                    
+                </tr>
+            </table> 
+        </center>
+    </br>
+        <center>
+            <table>
+            
+                <tr>
+                    <td>Enter Number2</td>
+                
+                    <td>
+                        <input type="text" required="required" name="2ndNumber" id="num2" placeholder="Enter the number">
+                    </td>
+                    
+                </tr>    
+            </table>
+        </center>
+    </br>
+        <center>
+            <table>
+                    <tr>
+                        <td>Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <input type="text" required="required" name="Result" id="result" placeholder="Result shown here" value="">
+                        </td>
+                    </tr>
+            </table>
+        </center>
+    </br>
+    <center>
+        <button type="button" name="Add" value="Addition" onclick="Addition()">Addition</button> 
+        &nbsp;
+        <button type="button" name="Sub" value="Subtraction" onclick="Subtraction()">Subtraction</button>
+        &nbsp;
+        <button type="button" name="Mul" value="Multiplication" onclick="Multiplication()">Multiplication</button>
+        &nbsp;
+        <button type="button" name="Div" value="Division" onclick="Division()">Division</button>
+    </center>
+</form> 
+
+</body>
+</html>
