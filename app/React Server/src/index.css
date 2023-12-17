@@ -1,0 +1,25 @@
+#row{
+  background-color: aqua;
+}
+thead{
+  background-color: darkturquoise;
+}
+
+.none{
+  display: none;
+}
+
+.A{
+  height: 100px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.B{
+  height: auto;
+  width: auto;
+  vertical-align: bottom;
+  margin-right: 0%;
+}
